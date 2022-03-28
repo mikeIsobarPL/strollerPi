@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "ds18b20-raspi": "^0.3.6",
+    "express": "^4.17.1",
+    "i2c-bus": "^5.2.1",
+    "onoff": "^6.0.1",
+    "raspivid-stream": "^0.2.1",
+    "serialport": "^9.0.7",
+    "socket.io": "^3.1.1",
+    "socket.io-client": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.10",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "nodemon": "^2.0.7"
+  }
+}

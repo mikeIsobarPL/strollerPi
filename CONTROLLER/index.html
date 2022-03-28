@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skoda Controller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+
+    <style>
+        html,
+        body,
+        canvas {
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="#006400">
+
+
+    <div style="position: absolute;" id="videoHolder" display >
+        <canvas id="videoCanvas" width="1920" height="1080" >
+            <p>
+                Please use a browser that supports the Canvas Element, like
+                <a href="http://www.google.com/chrome">Chrome</a>,
+                <a href="http://www.mozilla.com/firefox/">Firefox</a>,
+                <a href="http://www.apple.com/safari/">Safari</a> or Internet Explorer 10
+            </p>
+        </canvas>
+    </div>
+
+    <div style="position: absolute;" id="gameHolder"  >
+
+    </div>
+
+    <script src="jsmpg.js"></script>
+
+    <script type="text/javascript">
+      // Show loading notice
+      var x = document.createTextNode("SERVER_NAME");
+
+
+      var canvas = document.getElementById('videoCanvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#444';
+      ctx.fillText('Loading...', canvas.width/2-30, canvas.height/3);
+
+
+      let camAddress = 'ws://' + "strollerpi" + ':8084/';
+
+      if (window.location.hostname.indexOf("local") > 0)
+        camAddress = 'ws://' + "strollerpi.local" + ':8084/';
+
+      var client = new WebSocket(camAddress);
+
+      //var client = new WebSocket('ws://180f65e93370.ngrok.io');//180f65e93370.ngrok.io
+      var player = new jsmpeg(client, {canvas:canvas});
+
+      var width = window.innerWidth, height = window.innerHeight;
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+
+    </script>
+    <script src="vendors.app.bundle.js"></script>
+    <script src="app.bundle.js"></script>
+
+
+
+</body>
+
+</html>

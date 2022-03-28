@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skoda Controller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+
+    <style>
+        html,
+        body,
+        canvas {
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="#006400">
+
+
+<script type="text/javascript" src="https://rawgit.com/131/h264-live-player/master/vendor/dist/http-live-player.js"></script>
+<script>
+  var canvas = document.createElement("canvas");
+  document.body.appendChild(canvas);
+
+  var wsavc = new WSAvcPlayer(canvas, "webgl");
+
+  wsavc.connect("ws://192.168.1.49:9001");
+</script>
+
+</body>
+
+</html>
