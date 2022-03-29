@@ -36,4 +36,6 @@ provide intertnet to rpi, connect it via ethernet.
 
 All of production files are placed on desktop, and run in terminal with script start.sh on startup.
 
+**Important** - in strollerPi1 disconnect first sensor from board on Arduino at start.
+
 
