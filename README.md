@@ -1,5 +1,5 @@
 # strollerPi
-Baby stroller made for Skoda, equiped with safety systems, camera, brakes, termometer etc
+Baby stroller made for foundation "Rodzic w mieście", equiped with safety systems, camera, brakes, termometer etc
 
 # overview
 There are 2 prototypes of strollers - strollerPi2 & strollerPi2. The main difference is use of different ultrasonic sensors/ and. Every stroller consists of 
