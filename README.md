@@ -6,6 +6,13 @@ There are 2 prototypes of strollers - strollerPi2 & strollerPi2. The main differ
 frame with brakes, raspberryPi, arduino mega and iPad mini. To interact with each stroller, You have to log in to wifi - (strollerPi1 or 2) with password **skoda123**. 
 Launch the app strollerPi on iPad or any device type in _http://strollerpi:9000/_ to enter GUI or _http://strollerpi:9001/_ to enter controller mode. On iOS http://strollerPi.local.
 
+# main functions:
+Blind zone detection - 2 us sensors detects the obstacles behind the stroller - notify with graphics / audio 
+Hill hold controll  - 2 buttons on the bar detects hands - notify with graphic / brake
+Traffic alert - 2 front us sensors on side estimating  presence of moving objects to alert user - graphic/audio/brakes
+Front assist - 3 front us sensors and camera monitor the front environment -  graphics, sounds
+Thermometer - simple temperature monitoring - graphics
+
 ##system
 
 Whole system consists off actors with roles:
@@ -39,7 +46,15 @@ System has two modes to set
 - microcomputer: rpi 4b + rpi port extander
 - others: switch relay, thermometer
 
-
+#assemblement
+- get iBebe stroller
+- buy electonic parts
+- compile and upload all code to RPI and arduino
+- get PCB board or assembly it on protortype board according to schemas
+- print 3D files with stl files
+- get ipad mini or other mobile screen
+- assembly it together
+- test and use
 
 ##running, accessing
 
