@@ -2,7 +2,7 @@
 Baby stroller made for foundation "Rodzic w mieście", equiped with safety systems, camera, brakes, termometer etc
 
 # overview
-There are 2 prototypes of strollers - strollerPi2 & strollCancel changeserPi2. The main difference is use of different ultrasonic sensors/ and. Every stroller consists of 
+There are 2 prototypes of strollers - strollerPi2 & strollerPi2. The main difference is use of different ultrasonic sensors/ and. Every stroller consists of 
 frame with brakes, raspberryPi, arduino mega and iPad mini. To interact with each stroller, You have to log in to wifi - (strollerPi1 or 2) with password **skoda123**. 
 Launch the app strollerPi on iPad or any device type in _http://strollerpi:9000/_ to enter GUI or _http://strollerpi:9001/_ to enter controller mode. On iOS http://strollerPi.local.
 
