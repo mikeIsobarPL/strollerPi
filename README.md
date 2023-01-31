@@ -1,6 +1,8 @@
 # strollerPi
 Baby stroller made for foundation "Rodzic w mieście", equiped with safety systems, camera, brakes, termometer etc
 
+![strollerPi](https://user-images.githubusercontent.com/101274052/215774084-7d4795f9-ded1-4807-8d0b-fcb180e3feea.png)
+
 # overview
 There are 2 prototypes of strollers - strollerPi2 & strollerPi2. The main difference is use of different ultrasonic sensors/ and. Every stroller consists of 
 frame with brakes, raspberryPi, arduino mega and iPad mini. To interact with each stroller, You have to log in to wifi - (strollerPi1 or 2) with password **skoda123**. 
@@ -64,4 +66,7 @@ provide intertnet to rpi, connect it via ethernet.
 All of production files are placed on desktop, and run in terminal with script start.sh on startup.
 
 **Important** - in strollerPi1 disconnect first sensor from board on Arduino at start.
+
+![comps](https://user-images.githubusercontent.com/101274052/215776046-4cd49c3d-ba81-4867-96f3-c4d5fc8412cc.png)
+
 
